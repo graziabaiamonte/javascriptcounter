@@ -22,3 +22,4 @@ As soon as the user enters the page, he will see 0 as the counter value and will
 
 ## Visit the [website](https://javascriptcounterbygrazia.netlify.app/)
 
+<img width="1440" alt="Screenshot 2023-12-09 alle 13 41 11" src="https://github.com/graziabaiamonte/javascriptcounter/assets/146842007/67963fb9-08e2-4792-b33a-9378e922d8cd">
