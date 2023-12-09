@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+} 
+
+h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: rgb(7, 7, 33);
+}
+
+
+body{
+    background-image: url("../img/cod.jpg");
+    background-position: center;
+    background-size:cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+#box-counter{
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#box-testo{
+    background-color: rgb(8, 7, 44);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+   margin: 0 auto;
+   font-size: 24px;
+   cursor: pointer;
+   padding: 10px 50px;
+   border: none;
+   border-radius: 2px;
+}
+
+button:active{
+    background-color: #DAD5CF;
+}
+
+#reset{
+    margin-top: 70px;
+    padding: 10px 60px;
+    font-size: 20px;
+}
+
+#box-testo p{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#number{
+    font-size: 26px;
+    padding: 0 20px;
+}
+
+.box-sfondo p{
+    margin-top: 40px;
+}
+
+footer{
+    background-color: rgb(9, 10, 30);
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p{
+    font-size: 12px;
+    padding: 14px;
+    color: #DAD5CF;
+}
