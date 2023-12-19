@@ -1,15 +1,64 @@
-const number = document.getElementById('number');
-let buttonPlus = document.getElementById('plus');
-const buttonMinus = document.getElementById('minus');
-const buttonReset = document.getElementById('reset');
-const title = document.querySelector('h1');
+const number = document.createElement('span');
+number.innerHTML = '0';
+let buttonPlus = document.createElement('button');
+buttonPlus.innerHTML = '+';
+const buttonMinus = document.createElement('button');
+buttonMinus.innerHTML = '-';
+const buttonReset = document.createElement('button');
+buttonReset.innerHTML = 'reset';
+
+buttonMinus.classList.add('button');
+buttonPlus.classList.add('button');
+buttonReset.classList.add('button');
+buttonReset.classList.add('reset');
+number.classList.add('number');
+
+const boxGenerale = document.getElementById('box-generale');
+
+const boxSfondo = document.createElement('div');
+boxSfondo.classList.add('boxSfondo');
+boxGenerale.appendChild(boxSfondo);
+
+const boxCounter = document.createElement('div');
+boxCounter.classList.add('boxCounter');
+boxSfondo.appendChild(boxCounter);
+
+const titolo = document.createElement('h1');
+titolo.innerHTML = 'JAVASCRIPT COUNTER';
+boxCounter.appendChild(titolo);
+
+const counter = document.createElement('div');
+counter.classList.add('counter');
+boxCounter.appendChild(counter);
+
+counter.appendChild(buttonMinus);
+counter.appendChild(number);
+counter.appendChild(buttonPlus);
+
+boxCounter.appendChild(buttonReset);
+
+const boxTesto = document.createElement('div');
+boxSfondo.appendChild(boxTesto);
+boxTesto.classList.add('boxTesto')
+const testoSize = document.createElement('p');
+boxTesto.appendChild(testoSize);
+testoSize.innerHTML = 'TEXT SIXE';
+
+const testoDimensione = document.createElement('p');
+boxTesto.appendChild(testoDimensione);
+testoDimensione.innerHTML = '20 px';
+
+
+
 let pElement = document.querySelector('p')
-let testoDimensione = document.getElementById('testoDimensione');
+
+
+
 
 buttonPlus.addEventListener('click', add);
 
 buttonPlus.addEventListener('click', increaseFontSize);
-buttonMinus.addEventListener('click',subtract)
+buttonMinus.addEventListener('click',subtract);
 
 
 buttonMinus.addEventListener('click', decreaseFontSize);
@@ -17,9 +66,6 @@ buttonReset.addEventListener('click', reset);
 
 let value = 0;
 
-/**
- * The add function increments the value variable and updates the number element with the new value.
- */
 
 function add() {
     if (value< 100){
@@ -31,7 +77,7 @@ function add() {
 
 function increaseFontSize(){
     if (value < 100){
-    let paragrafo = document.querySelector('p')
+    let paragrafo = document.querySelector('p');
     let currentSize = parseInt(window.getComputedStyle(paragrafo).fontSize);
     let newSize = currentSize+1;
     paragrafo.style.fontSize = newSize + 'px'
@@ -48,10 +94,6 @@ function subtract() {
     number.innerHTML = value;
     
 }
-/**
- * The function decreases the font size of a paragraph element by 1 pixel and changes its color to a
- * random value.
- */
 
 function decreaseFontSize(){
    let paragrafo = document.querySelector('p')
@@ -72,3 +114,15 @@ function reset(){
     pElement.style.fontSize = '20px'
     testoDimensione.innerHTML = window.getComputedStyle(testoDimensione).fontSize;
 }
+
+
+
+const footer = document.createElement('footer');
+footer.classList.add('footer');
+boxGenerale.appendChild(footer);
+let testoCopyright = document.createElement('p');
+testoCopyright.innerHTML = 'Copyright &#169; 2023 by Grazia Baiamonte | All Rights Reserved'
+footer.appendChild(testoCopyright);  
+let pProject = document.createElement('p');
+footer.appendChild(pProject);
+pProject.innerHTML = 'Start2Impact - Project Basic Javascript'

@@ -24,7 +24,7 @@ body{
 }
 
 
-#box-counter{
+.boxCounter{
     background-color: white;
     margin-top: 15%;
     margin-left: 5%;
@@ -33,7 +33,7 @@ body{
     border-radius: 5px;
 }
 
-#box-testo{
+.boxTesto{
     background-color: rgb(8, 7, 44);
     padding: 10px;
     border-radius: 5px;
@@ -41,13 +41,13 @@ body{
     margin-left: 5%;
     margin-right: 5%;
 }
-#counter{
+.counter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button{
+.button{
    margin: 0 auto;
    font-size: 24px;
    cursor: pointer;
@@ -56,32 +56,32 @@ button{
    border-radius: 2px;
 }
 
-button:active{
+.button:active{
     background-color: #DAD5CF;
 }
 
-#reset{
+.reset{
     margin-top: 70px;
     padding: 10px 60px;
     font-size: 20px;
 }
 
-#box-testo p{
+.boxTesto p{
     padding: 20px;
     color: white;
     font-size: 20px;
 }
 
-#number{
+.number{
     font-size: 26px;
     padding: 0 20px;
 }
 
-.box-sfondo p{
+.boxSfondo p{
     margin-top: 40px;
 }
 
-footer{
+.footer{
     background-color: rgb(9, 10, 30);
     bottom: 0;
     left: 0;
@@ -92,7 +92,7 @@ footer{
     justify-content: space-around;
 }
 
-footer p{
+.footer p{
     font-size: 12px;
     margin: auto;
     color: #DAD5CF;
