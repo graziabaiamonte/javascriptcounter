@@ -1,7 +1,7 @@
 
 
 # JS Counter 
-This project is the exam of the "Javascript-Basic" course of  Start2Impact University
+Project - Javascript basic course Start2Impact University
 
 
 ## Technologies
